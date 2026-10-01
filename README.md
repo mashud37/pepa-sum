@@ -1,3 +1,5 @@
+Archived version. Development continues at [mashud37/pepa-workers/](https://github.com/mashud37/pepa-workers/).
+
 # pepa-sum
 
 pepa-sum takes a folder of papers, born-digital or scanned PDFs, or already-extracted markdown or text (pepa-prep output fits directly), and turns each one into three Markdown documents: a structured brief, a paragraph-by-paragraph rundown, and a set of verbatim quotes checked against the source. All the expensive reading, OCR, the spaCy pass, BM25 retrieval, reference stripping, happens locally; only a compact, signal-enriched prompt goes to the language model, and only the `anthropic` backend sends anything off the machine at all. The reasoning behind the split into three documents is deliberate. A downstream reader can scan the briefs to decide which papers matter, then draw on the rundowns and quotes for detail when writing something up, such as a literature review.
